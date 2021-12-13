@@ -1001,20 +1001,29 @@ header .part-two .content {
     color: white;
     text-transform: uppercase;
 }
-@media (max-width:992px) {
+@media (max-width:768px) {
     .pricing .price-part-two .container {
         flex-direction: column;
         align-items: flex-start;
     }
-    .pricing .price-part-two .container p {
-        text-align: left;
-        margin-top: 50px;
+    .pricing .price-part-two .container form {
+        min-width: auto;
     }
     .pricing .price-part-two input[type="email"] {
-    width: 250px;
+    width: 300px;
+    border-right: 1px solid white;
     }
     .pricing .price-part-two input[type="submit"] {
-        /* left: -100px; */
+    left: 0px;
+    border-left: 1px white solid;
+    margin-top: 20px;
+    display: inline-block;
+    }
+    .pricing .price-part-two .container form i {
+        display: none;
+    }
+    .pricing .price-part-two .container p {
+        margin-top: 20px;
     }
 }
 /* End pricing section  */
@@ -1079,6 +1088,9 @@ header .part-two .content {
         text-align: center;
         padding: 0;
     }
+    .contact-us .info {
+        width: 200px;
+    }
 
 }
 /* end contact us section  */
@@ -1119,13 +1131,4 @@ footer .container p span {
     font-weight: bold;
     text-transform: capitalize;
 }
-
 /* end footer  */
-
-
-
-
-
-
-
-
